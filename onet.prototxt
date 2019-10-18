@@ -202,3 +202,9 @@ layer {
     }
   }
 }
+layer {
+  name: "prob1"
+  type: "Softmax"
+  bottom: "fc2"
+  top: "prob1"
+}

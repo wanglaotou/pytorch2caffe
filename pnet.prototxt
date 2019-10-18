@@ -138,3 +138,9 @@ layer {
     kernel_w: 1
   }
 }
+layer {
+  name: "prob1"
+  type: "Softmax"
+  bottom: "conv4_1"
+  top: "prob1"
+}
